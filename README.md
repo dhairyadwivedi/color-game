@@ -5,5 +5,5 @@ This game is built with Vanilla JS.
 <p>The game has two modes: </p>
 <ul>
   <li>Easy: Displays 3 squares</li>
-  <li>Hard: Displays 6 squares.</li>
+  <li>Hard: Displays 6 squares</li>
 </ul>
