@@ -50,7 +50,7 @@ function setupSquares(){
 function reset(){
 	colors = generateRandomColors(numSquares);
 	pickedColor = pickColor();
-	//change colorDisplay to match picked Color
+	//change colorDisplay to match pickedColor
 	colorDisplay.textContent = pickedColor;
 	resetButton.textContent = "New Colors"
 	messageDisplay.textContent = "";
@@ -63,4 +63,11 @@ function reset(){
 		}
 	}
 	h1.style.background = "steelblue";
+}
+function changeColors(color){
+	//loop through squares
+	for(var i = 0; i < squares.length; i++){
+		//change each color to match given color
+		squares[i].style.background = color;
+	}
 }
