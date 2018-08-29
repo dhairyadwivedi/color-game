@@ -71,3 +71,16 @@ function changeColors(color){
 		squares[i].style.background = color;
 	}
 }
+function pickColor(){
+	var random = Math.floor(Math.random() * colors.length);
+	return colors[random];
+}
+
+function generateRandomColors(num){
+	var arr = [];
+	for(var i = 0; i < num; i++){
+		//get random color and push into arr
+		arr.push(randomColor())
+	}
+	return arr;
+}
