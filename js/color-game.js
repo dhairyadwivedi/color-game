@@ -84,3 +84,14 @@ function generateRandomColors(num){
 	}
 	return arr;
 }
+
+function randomColor(){
+	//pick a random no. as RGB value of red from 0 - 255
+	var r = Math.floor(Math.random() * 256);
+	//pick a random no. as RGB value of green from 0 - 255
+	var g = Math.floor(Math.random() * 256);
+	//pick a random no. as RGB value of blue from 0 - 255
+	var b = Math.floor(Math.random() * 256);
+	return "rgb(" + r + ", " + g + ", " + b + ")";
+}
+
